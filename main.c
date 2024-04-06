@@ -243,8 +243,9 @@ int main(int argc, char **argv)
     while (!quit)
     {
         fprintf(stdout, "pps: %llu\n", (pckts_counter - last_count) / 3);
-        sleep(3);        
         last_count = pckts_counter;
+        
+        sleep(3);        
     }
     
     // End
